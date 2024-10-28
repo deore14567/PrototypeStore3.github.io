@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+    <header>
+        <h1>Prototype Store</h1>
+        <p>Your All-in-One Shopping App</p>
+    </header>
+    <nav class="navbar">
+        <button onclick="location.href='index.html'">Home</button>
+        <button onclick="location.href='shopping.html'">Online Shopping</button>
+        <button onclick="location.href='food.html'">Food</button>
+        <button onclick="location.href='medicine.html'">Medicine</button>
+        <button onclick="location.href='education.html'">Education</button>
+    </nav>
+    <main>
+        <div id="home" class="section active">
+            <h2>Welcome to Prototype Store</h2>
+            <p>This app brings you a seamless shopping experience with dedicated sections for various needs:</p>
+            <div class="features">
+                <div class="feature" onclick="location.href='shopping.html'">
+                    <i class="fas fa-shopping-cart fa-2x"></i>
+                    <h3>Shopping</h3>
+                    <p>Access popular online shopping platforms with great deals.</p>
+                </div>
+                <div class="feature" onclick="location.href='food.html'">
+                    <i class="fas fa-utensils fa-2x"></i>
+                    <h3>Food</h3>
+                    <p>Order from a range of restaurants, catering to diverse tastes.</p>
+                </div>
+                <div class="feature" onclick="location.href='medicine.html'">
+                    <i class="fas fa-pills fa-2x"></i>
+                    <h3>Medicine</h3>
+                    <p>Find and purchase medicines with ease.</p>
+                </div>
+                <div class="feature" onclick="location.href='education.html'">
+                    <i class="fas fa-book fa-2x"></i>
+                    <h3>Education</h3>
+                    <p>Explore resources and courses to enhance your knowledge.</p>
+                </div>
+            </div>
+        </div>
+        <div id="food" class="section">
+            <h2>Food Section</h2>
+            <p>Order food from your favorite restaurants.</p>
+        </div>
+        <div id="medicine" class="section">
+            <h2>Medicine Section</h2>
+            <p>Find and order medicines easily.</p>
+        </div>
+        <div id="education" class="section">
+            <h2>Education Section</h2>
+            <p>Access educational resources and tools.</p>
+        </div>
+    </main>
+    <footer>
+        &copy; 2024 Rohit Deore Private Limited
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
