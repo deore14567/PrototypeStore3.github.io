@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Platforms - Prototype Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Animated Ball Styles */
+        .ball {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            position: absolute;
+            animation: bounce 1s infinite alternate;
+        }
+
+        .ball-solid {
+            background-color: #ff4500; /* Solid */
+        }
+
+        .ball-liquid {
+            background-color: #00bfff; /* Liquid */
+        }
+
+        .ball-gas {
+            background-color: #32cd32; /* Gas */
+        }
+
+        @keyframes bounce {
+            from { transform: translateY(0); }
+            to { transform: translateY(-20px); }
+        }
+
+        /* Fun Fact Box */
+        .fact-box {
+            position: fixed;
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 1em;
+            opacity: 0;
+            transition: opacity 0.3s;
+            z-index: 1000;
+            display: none;
+        }
+
+        /* Enhanced Quiz Styles */
+.quiz-container {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f0faff;
+    border: 2px solid #00b3ff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.quiz-container h2 {
+    color: #007acc;
+    margin-bottom: 15px;
+}
+
+.quiz-question {
+    font-size: 1.25em;
+    font-weight: bold;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+.quiz-options {
+    display: grid;
+    gap: 15px;
+}
+
+.quiz-option {
+    padding: 12px;
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s, border-color 0.3s;
+    font-size: 1em;
+    font-weight: 500;
+    color: #333333;
+}
+
+.quiz-option:hover {
+    background: #e6f7ff;
+    border-color: #007acc;
+}
+
+.quiz-option:active {
+    background: #cce7ff;
+    border-color: #005f99;
+    color: #00264d;
+}
+
+.quiz-feedback {
+    margin-top: 15px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #ff4500;
+    transition: color 0.3s;
+}
+
+        /* Atom and Electron Animation Styles */
+        .atom-container {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            margin: 30px auto;
+            animation: spin 20s infinite linear;
+        }
+
+        .nucleus {
+            width: 25px;
+            height: 25px;
+            background-color: #0ff;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 0 8px #00b3ff;
+        }
+
+        .orbit {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            border-radius: 50%;
+            border: 1px dotted rgba(0, 191, 255, 0.5);
+            animation: rotate 5s linear infinite;
+        }
+
+        .electron {
+            width: 15px;
+            height: 15px;
+            background-color: #0077ff;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Online Education</h1>
+        <p>Explore the top online education platforms and courses</p>
+    </header>
+    <nav class="navbar">
+        <button onclick="location.href='index.html'">Home</button>
+        <button onclick="location.href='shopping.html'">Online Shopping</button>
+        <button onclick="location.href='food.html'">Food</button>
+        <button onclick="location.href='medicine.html'">Medicine</button>
+        <button onclick="location.href='education.html'">Education</button>
+    </nav>
+    <main>
+        <div class="education-section">
+            <h2>Physics Wallah (PW)</h2>
+            <p>Learn Physics, Chemistry, and Math from top educators with affordable courses at PW.</p>
+            <a href="pw.html" class="details-link">Explore PW</a>
+        </div>
+        <div class="education-section">
+            <h2>Unacademy</h2>
+            <p>Prepare for competitive exams and learn various subjects from top teachers on Unacademy.</p>
+            <a href="unacademy.html" class="details-link">Explore Unacademy</a>
+        </div>
+        <div class="education-section">
+            <h2>Udemy</h2>
+            <p>Access thousands of courses in tech, business, arts, and more with Udemy's online learning platform.</p>
+            <a href="udemy.html" class="details-link">Explore Udemy</a>
+        </div>
+        <div class="education-section">
+            <h2>BYJU'S</h2>
+            <p>Get interactive lessons and personalized learning experiences for school students on BYJU'S.</p>
+            <a href="byjus.html" class="details-link">Explore BYJU'S</a>
+        </div>
+        
+        <!-- Quiz Section -->
+        <div class="quiz-container" id="quizContainer">
+            <h2>Test Your Knowledge!</h2>
+            <div class="quiz-question" id="quizQuestion"></div>
+            <div class="quiz-options" id="quizOptions"></div>
+            <div class="quiz-feedback" id="quizFeedback"></div>
+        </div>
+
+        <!-- Atom Animation Section -->
+        <div class="atom-container">
+            <div class="nucleus"></div>
+            <div class="orbit" style="animation-duration: 4s;">
+                <div class="electron"></div>
+            </div>
+            <div class="orbit" style="animation-duration: 6s;">
+                <div class="electron"></div>
+            </div>
+            <div class="orbit" style="animation-duration: 8s;">
+                <div class="electron"></div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        &copy; 2024 Rohit Deore Private Limited
+    </footer>
+
+    <!-- Fun Element Balls -->
+    <div class="ball ball-solid"></div>
+    <div class="ball ball-liquid"></div>
+    <div class="ball ball-gas"></div>
+
+    <!-- Fun Fact Box -->
+    <div class="fact-box" id="factBox">Click on a state of matter to learn more!</div>
+
+    <script src="education.js"></script>
+    <script>
+        // Animate Balls
+        const balls = document.querySelectorAll('.ball');
+        balls.forEach((ball, index) => {
+            ball.style.left = `${Math.random() * window.innerWidth}px`;
+            ball.style.top = `${Math.random() * window.innerHeight * 0.6}px`;
+            ball.style.animationDuration = `${Math.random() * 1 + 0.5}s`;
+
+            // Add event listener for fun facts
+            ball.addEventListener('click', () => {
+                let fact = '';
+                switch (index) {
+                    case 0:
+                        fact = "Solid: Molecules are tightly packed and only vibrate in place.";
+                        break;
+                    case 1:
+                        fact = "Liquid: Molecules are close together but can flow past one another.";
+                        break;
+                    case 2:
+                        fact = "Gas: Molecules are far apart and move freely.";
+                        break;
+                }
+                const factBox = document.getElementById('factBox');
+                factBox.innerText = fact;
+                factBox.style.display = 'block';
+                factBox.style.opacity = 1;
+
+                // Hide fact box after 3 seconds
+                setTimeout(() => {
+                    factBox.style.opacity = 0;
+                    setTimeout(() => {
+                        factBox.style.display = 'none';
+                    }, 300);
+                }, 3000);
+            });
+        });
+
+        // Quiz Functionality
+        const quizData = [
+            {
+                question: "What is the chemical formula for water?",
+                options: ["H2O", "O2", "CO2", "N2"],
+                answer: "H2O"
+            },
+            {
+                question: "What is the acceleration due to gravity?",
+                options: ["9.8 m/s²", "9.8 m/s", "10 m/s²", "8.5 m/s²"],
+                answer: "9.8 m/s²"
+            },
+            {
+                question: "Which of the following is a noble gas?",
+                options: ["Oxygen", "Hydrogen", "Argon", "Nitrogen"],
+                answer: "Argon"
+            }
+        ];
+        
+        let currentQuizIndex = 0;
+        
+        function loadQuiz() {
+            const currentQuiz = quizData[currentQuizIndex];
+            document.getElementById("quizQuestion").innerText = currentQuiz.question;
+            const quizOptions = document.getElementById("quizOptions");
+            quizOptions.innerHTML = "";
+            currentQuiz.options.forEach(option => {
+                const button = document.createElement("button");
+                button.classList.add("quiz-option");
+                button.innerText = option;
+                button.addEventListener("click", () => checkAnswer(option));
+                quizOptions.appendChild(button);
+            });
+        }
+
+        function checkAnswer(selectedOption) {
+            const feedback = document.getElementById("quizFeedback");
+            if (selectedOption === quizData[currentQuizIndex].answer) {
+                feedback.innerText = "Correct!";
+                feedback.style.color = "green";
+                currentQuizIndex = (currentQuizIndex + 1) % quizData.length;
+            } else {
+                feedback.innerText = "Wrong! Try again.";
+                feedback.style.color = "red";
+            }
+            setTimeout(loadQuiz, 2000);
+        }
+
+        loadQuiz();
+    </script>
+</body>
+</html>
