@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery - Prototype Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Top Food Delivery Apps</h1>
+        <p>Your favorite dishes, delivered fast and fresh!</p>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <button onclick="location.href='index.html'">Home</button>
+        <button onclick="location.href='shopping.html'">Online Shopping</button>
+        <button onclick="location.href='food.html'">Food</button>
+        <button onclick="location.href='medicine.html'">Medicine</button>
+        <button onclick="location.href='education.html'">Education</button>
+    </nav>
+
+    <!-- Banner Slider -->
+    <section class="slider">
+        <div class="slides">
+            <div class="slide">
+                <img src="https://via.placeholder.com/800x300?text=Zomato+Top+Deals" alt="Zomato Deals">
+            </div>
+            <div class="slide">
+                <img src="https://via.placeholder.com/800x300?text=Swiggy+Hot+Offers" alt="Swiggy Offers">
+            </div>
+            <div class="slide">
+                <img src="https://via.placeholder.com/800x300?text=Zepto+Fresh+Groceries" alt="Zepto Groceries">
+            </div>
+            <div class="slide">
+                <img src="https://via.placeholder.com/800x300?text=Rapido+Quick+Deliveries" alt="Rapido Deliveries">
+            </div>
+            <div class="slide">
+                <img src="https://via.placeholder.com/800x300?text=Blinkit+Essentials" alt="Blinkit Essentials">
+            </div>
+        </div>
+    </section>
+
+    <!-- Food Delivery Apps Section -->
+    <main>
+        <h2>Explore Food Delivery Apps</h2>
+        <div class="food-section">
+            <h3>Zomato</h3>
+            <p>Get access to a wide variety of cuisines from top-rated restaurants with fast, reliable delivery.</p>
+            <a href="https://www.zomato.com" target="_blank" class="details-link">Explore Zomato Deals</a>
+        </div>
+        <div class="food-section">
+            <h3>Swiggy</h3>
+            <p>Enjoy quick deliveries with the best deals on food from popular local and chain restaurants.</p>
+            <a href="https://www.swiggy.com" target="_blank" class="details-link">Explore Swiggy Offers</a>
+        </div>
+        <div class="food-section">
+            <h3>Zepto</h3>
+            <p>Shop for fresh groceries and ingredients with ultra-fast delivery, straight to your kitchen.</p>
+            <a href="https://www.zepto.com" target="_blank" class="details-link">Shop Zepto Groceries</a>
+        </div>
+        <div class="food-section">
+            <h3>Rapido</h3>
+            <p>Experience quick, budget-friendly bike deliveries for food and essentials.</p>
+            <a href="https://www.rapido.bike" target="_blank" class="details-link">Explore Rapido Services</a>
+        </div>
+        <div class="food-section">
+            <h3>Blinkit</h3>
+            <p>Get all your daily essentials delivered to your doorstep with convenience and ease.</p>
+            <a href="https://www.blinkit.com" target="_blank" class="details-link">Shop Blinkit Essentials</a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Rohit Deore Private Limited
+    </footer>
+
+    <!-- JavaScript for Slider -->
+    <script>
+        let slideIndex = 0;
+        function showSlides() {
+            const slides = document.getElementsByClassName("slide");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }    
+            slides[slideIndex-1].style.display = "block";  
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+        showSlides();
+    </script>
+</body>
+</html>
