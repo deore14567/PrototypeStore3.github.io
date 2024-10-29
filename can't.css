@@ -1,0 +1,67 @@
+/* can't.css */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #000d1a;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  text-align: center;
+  color: #00e5ff;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #00e5ff;
+  text-shadow: 0 0 5px #00e5ff, 0 0 10px #00e5ff, 0 0 20px #00e5ff, 0 0 40px #00e5ff;
+  animation: fadeIn 2s ease-in-out forwards, glow 2s infinite alternate;
+}
+
+.hidden {
+  opacity: 0;
+  transition: opacity 1.5s ease-in;
+}
+
+p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  animation: fadeIn 3s ease-in-out 2s forwards;
+}
+
+.sparkle {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #00e5ff;
+  opacity: 0.7;
+  animation: sparkleMove 4s infinite ease-in-out;
+  filter: blur(10px);
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #00e5ff, 0 0 20px #00e5ff, 0 0 30px #00e5ff;
+  }
+  to {
+    text-shadow: 0 0 5px #00e5ff, 0 0 15px #00e5ff, 0 0 20px #00e5ff;
+  }
+}
+
+@keyframes sparkleMove {
+  0% { top: 20%; left: 40%; opacity: 0.3; }
+  50% { top: 80%; left: 60%; opacity: 1; transform: scale(1.5); }
+  100% { top: 20%; left: 40%; opacity: 0.3; transform: scale(1); }
+}
