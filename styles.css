@@ -1567,3 +1567,154 @@ header {
     display: none;
     z-index: 1000;
 }
+
+
+
+/* Search Box Container */
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: center; /* Centers the search box and button */
+}
+
+/* Search Box */
+#searchBox {
+    padding: 10px;
+    border: 2px solid #03a9f4;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #e4e6eb;
+    font-size: 1rem;
+    width: 250px;
+    outline: none;
+}
+
+/* Search Button */
+#searchButton {
+    padding: 10px 15px;
+    background-color: #03a9f4;
+    color: white;
+    border: 1px solid #03a9f4;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 1rem;
+}
+
+#searchButton:hover {
+    background-color: #00e5ff;
+}
+
+/* Search Box Section */
+.search-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+/* Styling for the search box */
+.search-box {
+    padding: 12px;
+    width: 320px;
+    border: 2px solid transparent;
+    border-radius: 50px;
+    background: #111;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+    transition: all 0.3s ease;
+}
+
+/* On focus, the search box glow effect */
+.search-box:focus {
+    border: 2px solid #00FFFF;  /* Neon cyan color */
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+}
+/* Search Box Section */
+.search-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+/* Styling for the search box */
+.search-box {
+    padding: 12px;
+    width: 100%;
+    max-width: 350px; /* Maximum width for larger screens */
+    border: 2px solid transparent;
+    border-radius: 50px;
+    background: #111;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+    transition: all 0.3s ease;
+    margin: 0 auto; /* Center the search box */
+}
+
+/* On focus, the search box glow effect */
+.search-box:focus {
+    border: 2px solid #00FFFF;  /* Neon cyan color */
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+}
+
+/* Search button styling */
+.search-button {
+    padding: 12px;
+    border: none;
+    background-color: #00FFFF; /* Neon Cyan */
+    color: #111;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 12px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect for the search button */
+.search-button:hover {
+    background-color: #00B3B3; /* Slightly darker neon */
+    transform: scale(1.1);
+}
+
+/* Icon styling inside the button */
+.search-button i {
+    font-size: 20px;
+}
+
+/* Hover effect on the input field and button */
+.search-button:active, .search-box:active {
+    box-shadow: 0 0 20px rgba(0, 255, 255, 1);
+}
+
+/* Mobile-friendly adjustments */
+@media (max-width: 768px) {
+    /* Full width on small screens */
+    .search-box {
+        width: 90%;
+    }
+
+    /* Adjust padding and icon size for the search button */
+    .search-button {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    /* Improve spacing between the button and the input */
+    .search-box {
+        margin-bottom: 20px;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+    .search-box {
+        font-size: 14px; /* Smaller font for mobile screens */
+    }
+
+    .search-button {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
