@@ -55,3 +55,34 @@ function showSlides() {
 // Initialize the slider
 showSlides();
 
+// Search functionality
+function searchItems() {
+    const query = document.getElementById('searchBox').value.toLowerCase();
+    const features = document.querySelectorAll('.feature'); // These are the items you're filtering through.
+    
+    // Debugging: Log the current search query.
+    console.log("Search Query: ", query);
+
+    features.forEach((feature) => {
+        const title = feature.querySelector('h3').textContent.toLowerCase();
+        const description = feature.querySelector('p').textContent.toLowerCase();
+        
+        // Debugging: Log the title and description of each feature.
+        console.log("Feature Title: ", title);
+        console.log("Feature Description: ", description);
+        
+        // Show or hide based on the search query
+        if (title.includes(query) || description.includes(query)) {
+            feature.style.display = 'block';
+        } else {
+            feature.style.display = 'none';
+        }
+    });
+}
+
+// Trigger search when 'Enter' key is pressed
+document.getElementById('searchBox').addEventListener('keyup', function(event) {
+    if (event.key === 'Enter') {
+        searchItems();
+    }
+});
