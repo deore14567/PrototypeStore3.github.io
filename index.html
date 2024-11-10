@@ -11,14 +11,13 @@
     <header>
         <h1>Prototype Store</h1>
         <p>Your All-in-One Shopping App</p>
+        <!-- Search Box and Button -->
+        <div class="search-container">
+            <input type="text" id="searchBox" placeholder="Search..." onkeyup="searchItems()">
+            <button id="searchButton" onclick="searchItems()">Search</button>
+        </div>
     </header>
-    <nav class="navbar">
-        <button onclick="location.href='index.html'">Home</button>
-        <button onclick="location.href='shopping.html'">Online Shopping</button>
-        <button onclick="location.href='food.html'">Food</button>
-        <button onclick="location.href='medicine.html'">Medicine</button>
-        <button onclick="location.href='education.html'">Education</button>
-    </nav>
+    
     <main>
         <div id="home" class="section active">
             <h2>Welcome to Prototype Store</h2>
