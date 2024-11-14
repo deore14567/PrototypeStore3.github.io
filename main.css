@@ -1,0 +1,124 @@
+/* main.css */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f0f4f8, #1e2024);
+    color: #333;
+}
+
+/* Header styling */
+h1 {
+    color: #058aaf;
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 2.8rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-shadow: 0 3px 10px rgba(0, 198, 255, 0.7);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Table styling */
+.table {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table th {
+    background-color: #0048a3; /* Dark blue */
+    color: #0629b3; /* White text on dark blue */
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 1px solid #66a2ff;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.table td {
+    color: #0048a3;
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid #66a2ff;
+    font-size: 1rem;
+}
+
+/* First column styling */
+.table td:first-child {
+    background-color: #003366; /* Darker blue */
+    color: #0557db; /* White text for contrast */
+    font-weight: bold;
+}
+
+/* Select boxes styling */
+select.form-control {
+    background-color: #f0f4f8;
+    color: #333;
+    border: 1px solid #0078ff;
+    border-radius: 4px;
+    padding: 0.5rem;
+    transition: box-shadow 0.3s;
+}
+
+select.form-control:focus {
+    box-shadow: 0 0 8px rgba(0, 120, 255, 0.5);
+}
+
+/* Image styling */
+td > img {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    object-fit: contain;
+    border: 2px solid #0078ff;
+    border-radius: 4px;
+}
+
+/* Buy button styling */
+.btn-primary {
+    background-color: #0078ff;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 0.7rem 1.5rem;
+    border-radius: 4px;
+    transition: 0.3s;
+    box-shadow: 0 4px 12px rgba(0, 120, 255, 0.3);
+}
+
+.btn-primary:hover {
+    background-color: #005bbb;
+    box-shadow: 0 6px 15px rgba(0, 120, 255, 0.5);
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .table th,
+    .table td {
+        font-size: 0.9rem;
+        padding: 0.8rem;
+    }
+
+    .btn-primary {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+}
