@@ -7,32 +7,6 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        /* Animated Ball Styles */
-        .ball {
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            position: absolute;
-            animation: bounce 1s infinite alternate;
-        }
-
-        .ball-solid {
-            background-color: #ff4500; /* Solid */
-        }
-
-        .ball-liquid {
-            background-color: #00bfff; /* Liquid */
-        }
-
-        .ball-gas {
-            background-color: #32cd32; /* Gas */
-        }
-
-        @keyframes bounce {
-            from { transform: translateY(0); }
-            to { transform: translateY(-20px); }
-        }
-
         /* Fun Fact Box */
         .fact-box {
             position: fixed;
@@ -217,9 +191,6 @@
     </footer>
 
     <!-- Fun Element Balls -->
-    <div class="ball ball-solid"></div>
-    <div class="ball ball-liquid"></div>
-    <div class="ball ball-gas"></div>
 
     <!-- Fun Fact Box -->
     <div class="fact-box" id="factBox">Click on a state of matter to learn more!</div>
@@ -227,147 +198,25 @@
     <script src="education.js"></script>
     <script>
         // Animate Balls
-        const balls = document.querySelectorAll('.ball');
-        balls.forEach((ball, index) => {
-            ball.style.left = `${Math.random() * window.innerWidth}px`;
-            ball.style.top = `${Math.random() * window.innerHeight * 0.6}px`;
-            ball.style.animationDuration = `${Math.random() * 1 + 0.5}s`;
 
-            // Add event listener for fun facts
-            ball.addEventListener('click', () => {
-                let fact = '';
-                switch (index) {
-                    case 0:
-                        fact = "Solid: Molecules are tightly packed and only vibrate in place.";
-                        break;
-                    case 1:
-                        fact = "Liquid: Molecules are close together but can flow past one another.";
-                        break;
-                    case 2:
-                        fact = "Gas: Molecules are far apart and move freely.";
-                        break;
-                }
-                const factBox = document.getElementById('factBox');
-                factBox.innerText = fact;
-                factBox.style.display = 'block';
-                factBox.style.opacity = 1;
 
-                // Hide fact box after 3 seconds
-                setTimeout(() => {
-                    factBox.style.opacity = 0;
-                    setTimeout(() => {
-                        factBox.style.display = 'none';
-                    }, 300);
-                }, 3000);
-            });
-        });
-// Quiz Functionality
+        // Quiz Functionality
         const quizData = [
-        {
-        question: "What is the chemical formula for water?",
-        options: ["H2O", "O2", "CO2", "N2"],
-        answer: "H2O"
-    },
-    {
-        question: "What is the acceleration due to gravity?",
-        options: ["9.8 m/s²", "9.8 m/s", "10 m/s²", "8.5 m/s²"],
-        answer: "9.8 m/s²"
-    },
-    {
-        question: "Which of the following is a noble gas?",
-        options: ["Oxygen", "Hydrogen", "Argon", "Carbon"],
-        answer: "Argon"
-    },
-    {
-        question: "What is the formula for kinetic energy?",
-        options: ["1/2 mv²", "mv", "mgh", "F=ma"],
-        answer: "1/2 mv²"
-    },
-    {
-        question: "What is the molar mass of carbon dioxide (CO2)?",
-        options: ["12 g/mol", "44 g/mol", "18 g/mol", "22 g/mol"],
-        answer: "44 g/mol"
-    },
-    {
-        question: "What is the derivative of sin(x) with respect to x?",
-        options: ["cos(x)", "-cos(x)", "tan(x)", "-sin(x)"],
-        answer: "cos(x)"
-    },
-    {
-        question: "Which of these is an example of a chemical reaction?",
-        options: ["Dissolving sugar in water", "Boiling water", "Rusting of iron", "Melting ice"],
-        answer: "Rusting of iron"
-    },
-    {
-        question: "What is the speed of light in a vacuum?",
-        options: ["3 × 10^8 m/s", "3 × 10^6 m/s", "3 × 10^10 m/s", "3 × 10^5 m/s"],
-        answer: "3 × 10^8 m/s"
-    },
-    {
-        question: "Which of the following is a vector quantity?",
-        options: ["Speed", "Distance", "Velocity", "Energy"],
-        answer: "Velocity"
-    },
-    {
-        question: "What is the pH of pure water at 25°C?",
-        options: ["7", "0", "14", "1"],
-        answer: "7"
-    },
-    {
-        question: "Which element has the highest atomic number?",
-        options: ["Uranium", "Plutonium", "Oganesson", "Radon"],
-        answer: "Oganesson"
-    },
-    {
-        question: "What is the main function of white blood cells?",
-        options: ["Transport oxygen", "Fight infections", "Carry nutrients", "Regulate temperature"],
-        answer: "Fight infections"
-    },
-    {
-        question: "Which of the following equations represents Ohm's Law?",
-        options: ["V = IR", "V = P/I", "I = P/V", "R = V/I"],
-        answer: "V = IR"
-    },
-    {
-        question: "What is the derivative of x² with respect to x?",
-        options: ["2x", "x", "x²", "x³"],
-        answer: "2x"
-    },
-    {
-        question: "Which organ is responsible for producing insulin?",
-        options: ["Liver", "Kidney", "Pancreas", "Stomach"],
-        answer: "Pancreas"
-    },
-    {
-        question: "What is the principal quantum number of the first orbit in an atom?",
-        options: ["1", "2", "3", "0"],
-        answer: "1"
-    },
-    {
-        question: "The product of two vectors is called:",
-        options: ["Scalar", "Vector", "Matrix", "Tensor"],
-        answer: "Vector"
-    },
-    {
-        question: "What is the function of chlorophyll in plants?",
-        options: ["Absorb sunlight", "Store water", "Transport nutrients", "Absorb oxygen"],
-        answer: "Absorb sunlight"
-    },
-    {
-        question: "Which type of bond is formed when electrons are shared between two atoms?",
-        options: ["Ionic bond", "Covalent bond", "Metallic bond", "Hydrogen bond"],
-        answer: "Covalent bond"
-    },
-    {
-        question: "Which of the following is a property of a gas?",
-        options: ["Fixed shape", "Fixed volume", "Compressible", "Incompressible"],
-        answer: "Compressible"
-    },
-    {
-        question: "What is the formula for the area of a circle?",
-        options: ["πr²", "2πr", "πr", "πr³"],
-        answer: "πr²"
-    }
+            {
+                question: "What is the chemical formula for water?",
+                options: ["H2O", "O2", "CO2", "N2"],
+                answer: "H2O"
+            },
+            {
+                question: "What is the acceleration due to gravity?",
+                options: ["9.8 m/s²", "9.8 m/s", "10 m/s²", "8.5 m/s²"],
+                answer: "9.8 m/s²"
+            },
+            {
+                question: "Which of the following is a noble gas?",
+                options: ["Oxygen", "Hydrogen", "Argon", "Nitrogen"],
+                answer: "Argon"
+            }
         ];
         
         let currentQuizIndex = 0;
@@ -400,8 +249,6 @@
         }
 
         loadQuiz();
-       
-      
     </script>
 </body>
 </html>
