@@ -55,7 +55,7 @@ const product1 = [
         "description": "OnePlus Nord CE4 Lite 5G (Super Silver, 8GB RAM, 128GB Storage)",
         "brand": "OnePlus",
         "image": "https://m.media-amazon.com/images/I/61Io5-ojWUL._SX569_.jpg",
-        "buy1": "" // Amazon link
+        "buy1": "https://www.amazon.in/OnePlus-Super-Silver-128GB-Storage/dp/B0D5YCYS1G/ref=sr_1_1?crid=1MDS5VPWBYQU7&dib=eyJ2IjoiMSJ9.ygama0C3BZ2IIQEvGQ0Xq4-KHspbAXGUQUzPUcI6maGnbfaOqNiqcdXuwcZ5zYPj9BpX4h0XUUqCt0UW0imCFPIOuJzr9srfNALP1H5TjYVP9PB7_HHuSTF1GeP20RYkwGAYmbq8wC6mj0xmU4o6grxmCWeB96FhQupO5AZ_RyW8aQUr39BPgRLNPidlOABidvkrYPQKWifm90aL6IZxc6GowuizClcvQl3LG90yCHM.MuGB8P9FFKsOFsRnuf74r69eCxYjaUeNC3MAq-CmD8Q&dib_tag=se&keywords=oneplus+nord+ce+4+lite+5g&nsdOptOutParam=true&qid=1731858106&sprefix=oneplus+nord+ce+4+lite+5g%2Caps%2C201&sr=8-1" // Amazon link
     },
     {
         "id": 6,
@@ -88,11 +88,11 @@ const product1 = [
     {
         "id": 9,
         "title": "Vivo V40e 5G",
-        "price": 28080,
+        "price": 29498,
         "description": "Vivo V40e 5G AI Smartphone (Royal Bronze, 8GB RAM + 256GB Storage)",
         "brand": "Vivo",
         "image": "https://m.media-amazon.com/images/I/51dpdIhv8wL._SY606_.jpg",
-        "buy1": "" // Amazon link
+        "buy1": "https://www.amazon.in/Vivo-Smartphone-Royal-Bronze-Storage/dp/B0DJBSNWLP/ref=sr_1_1?crid=54119WQWA1ED&dib=eyJ2IjoiMSJ9.eeftIg7qzzUisYooyVp25KUXa6EY56d2XHLt-ZnYSvVls7ma7kmGyrjfvDehn1chZfxsxCtYVxLUEQGWqzuCS1G0Cbh9e9C2J6ugH0xrxaKnpxiHNR7AfK_H21x2ktACZ1ZaTbbMB4XZCiYPpLOoFVcWpgFxx4Xt3LnjtPGGSdDwLPQuQfEUHqAldEII2xWxHCZAuBA2azM3imUmRhpkt0E7a8FWCj9UogUm9T81qC4.jv53QF2ATpS8uHBOdyA6t8yEie5ObmJDLqxRyS3vCcM&dib_tag=se&keywords=vivo+v40e&nsdOptOutParam=true&qid=1731857939&sprefix=vivo%2Caps%2C265&sr=8-1" // Amazon link
     },
     {
         "id": 10,
