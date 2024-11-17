@@ -13,7 +13,7 @@ const product2 = [
         "id": 1,
         "title": "Samsung Galaxy S22",
         "price": 72999,
-        "description": "SAMSUNG Galaxy S22 5G (Phantom Black, 128 GB)  (8 GB RAM).Explore a new range of night photography features on this Samsung Galaxy S22 5G smartphone. You can click stunning images even in low light with the Nightography mode. It is designed with a pro-grade camera which comprises a big pixel sensor that welcomes more light for mind-blowing photography. Built with impressive software and hardware, this phone is a game-changer. With a 120 Hz refresh rate and dynamic AMOLED 2x display, you are going to experience immersive screen time. This phone operates on a Snapdragon 8 Gen 1 processor that delivers quick and hassle- free navigation. This device is protected by Corning Gorilla Glass Victus and has an IP68 waterproof rating.",
+        "description": "SAMSUNG Galaxy S22 5G (Phantom Black, 128 GB)  (8 GB RAM).Explore a new range of night photography features on this Samsung Galaxy S22 5G smartphone. ",
         "brand": "Samsung",
         "image": "https://m.media-amazon.com/images/I/71wGLBDEsvL._SX569_.jpg",
          // Amazon link
@@ -23,7 +23,7 @@ const product2 = [
         "id": 2,
         "title": "Apple iPhone 15",
         "price": 58999,
-        "description": "Apple iPhone 15 (Pink, 128 GB.Experience the iPhone 15 – your dynamic companion. Dynamic Island ensures you stay connected, bubbling up alerts seamlessly while you're busy. Its durable design features infused glass and aerospace-grade aluminum, making it dependable and resistant to water and dust. Capture life with precision using the 48 MP Main Camera, perfect for any shot. Powered by the A16 Bionic Processor, it excels in computational photography and more, all while conserving battery life. Plus, it's USB-C compatible, simplifying your charging needs. Elevate your tech game with the iPhone 15 – innovation at your fingertips. Goodbye cable clutter, hello convenience. ",
+        "description": "Apple iPhone 15 (Pink, 128 GB.Experience the iPhone 15 – your dynamic companion. Dynamic Island ensures you stay connected, bubbling up alerts seamlessly while you're busy.  ",
         "brand": "Apple",
         "image": "https://m.media-amazon.com/images/I/71v2jVh6nIL._SX466_.jpg", // Amazon link
         "buy2": "https://www.flipkart.com/apple-iphone-15-pink-128-gb/p/itm7579ed94ca647?pid=MOBGTAGPNMZA5PU5&lid=LSTMOBGTAGPNMZA5PU5AVZNIR&marketplace=FLIPKART&q=apple+iphone+15&store=tyy%2F4io&spotlightTagId=BestsellerId_tyy%2F4io&srno=s_1_4&otracker=AS_QueryStore_OrganicAutoSuggest_1_5_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_5_na_na_ps&fm=search-autosuggest&iid=7cb53ad3-b2b7-4ead-9d47-094cac73e102.MOBGTAGPNMZA5PU5.SEARCH&ppt=sp&ppn=sp&ssid=jgld0wlqe80000001731518611329&qH=9c74fa1d876d3040" // Flipkart link
@@ -50,7 +50,7 @@ const product2 = [
         "id": 5,
         "title": "OnePlus Nord CE4 Lite 5G",
         "price": 18399,
-        "description": "OnePlus Nord CE4 lite 5G (ULTRA ORANGE, 128 GB)  (8 GB RAM).Camera: 108 MP Main Camera with EIS; 2MP Depth-Assist Lens and 2MP Macro Lens; Front (Selfie) Camera: 16MP Rear Camera Mode: Hi-res 108MP mode, 3x Lossles Zoom, Photo, Video, Nightscape, Expert, Panoramic, Portrait, Macro, Time-lapse, Slow-motion, Long exposure, Dual-view video, Text Scanner, 1080p/720p@30fps, Video zoom: 1080P@30fps, 720P@30fps, Slow motion: 720P@120fps, Time-Lapse: 1080P@30fps, Steady Video EIS support Display: 6.72 Inches; 120 Hz Adaptive refresh rate; FHD+(1080×2400), Colors: 16.7 Million colors, 391 ppi, Aspect Ratio: 20:9, Brightness: 550 nits (typical), 680 nits (HBM) Operating System: Oxygen OS based on Android 13.1 Processor: Qualcomm Snapdragon 695 5G Battery & Charging: 5500 mAh with 80W SUPERVOOC Endurance Edition",
+        "description": "OnePlus Nord CE4 lite 5G (ULTRA ORANGE, 128 GB)  (8 GB RAM).Camera: 108 MP Main Camera with EIS; 2MP Depth-Assist Lens and 2MP Macro Lens; Front (Selfie) Camera: 16MP ",
         "brand": "OnePlus",
         "image": "https://m.media-amazon.com/images/I/51KJE22BKrL._SX569_.jpg", // Amazon link
         "buy2": "https://www.flipkart.com/oneplus-nord-ce4-lite-5g-ultra-orange-128-gb/p/itm8fd5fdf300955?pid=MOBH25ZEZBY3ZGBF&lid=LSTMOBH25ZEZBY3ZGBF106XXA&marketplace=FLIPKART&q=oneplus%20nord%20ce4%20lite%205g&sattr[]=color&sattr[]=storage&st=storage" // Flipkart link
@@ -68,7 +68,7 @@ const product2 = [
         "id": 7,
         "title": "Vivo V29 Pro 5G",
         "price": 39999,
-        "description": "vivo V29 Pro 5G (Black, 256 GB)  (8 GB RAM).This ultra-slim smartphone featuring a 3D curved display offers an impressive design and is comfortable to hold. The phone comes with changing colour temperatures that allows you to take stunning photos even in low light conditions. With an impressive 2X Pro Portrait lens with the Sony IMX 663 Sensor, capture brilliant photographs even at a distance of 0.5 to 2 metres making the subject stand out with a soft background blur. Also featuring a group selfie camera of 50 MP, the phone allows users to click stunning group selfies. Powered by a 80 W flash charge and 4 nm MediaTek Dimensity 8200 chipset, you can multitask seamlessly.",
+        "description": "vivo V29 Pro 5G (Black, 256 GB)  (8 GB RAM).This ultra-slim smartphone featuring a 3D curved display offers an impressive design and is comfortable to hold.",
         "brand": "Vivo",
         "image": "https://m.media-amazon.com/images/I/51vxzCngtXL._SX522_.jpg", // Amazon link
         "buy2": "https://www.flipkart.com/vivo-v29-pro-5g-black-256-gb/p/itm9eb62843149e4?pid=MOBGTR8X3FSCZXWG&lid=LSTMOBGTR8X3FSCZXWGL7X4TC&marketplace=FLIPKART&q=vivo+v29+pro+5g&store=tyy%2F4io&srno=s_1_1&otracker=AS_QueryStore_OrganicAutoSuggest_2_9_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_2_9_na_na_ps&fm=search-autosuggest&iid=82a2e56e-6624-4f98-9a25-1b7c71036336.MOBGTR8X3FSCZXWG.SEARCH&ppt=pp&ppn=pp&ssid=lz9zhxtt4w0000001731519728461&qH=16081d8bacd56385" // Flipkart link
