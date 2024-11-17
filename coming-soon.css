@@ -1,0 +1,97 @@
+/* Apply a professional blue neon theme */
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle at top left, #000428, #004e92);
+  color: #00f7ff;
+  font-family: 'Orbitron', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+  animation: fadeIn 2s ease-in-out;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #00d4ff;
+  text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 40px #0094cc;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 1rem 0;
+  color: #00aaff;
+  text-shadow: 0 0 10px #00aaff, 0 0 20px #006699;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #80eaff;
+  text-shadow: 0 0 10px #80eaff;
+}
+
+.glow-effect {
+  margin: 2rem auto;
+  width: 200px;
+  height: 200px;
+  background: rgba(0, 255, 255, 0.1);
+  border: 4px solid #00ffff;
+  border-radius: 50%;
+  position: relative;
+  animation: outwardGlow 2s infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.glow-effect::before {
+  content: '';
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0, 255, 255, 0.2), transparent 70%);
+  z-index: -1;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes outwardGlow {
+  0%, 100% {
+    box-shadow: 0 0 20px #00ffff, 0 0 60px #00ffff, 0 0 100px #00ffff;
+  }
+  50% {
+    box-shadow: 0 0 40px #00ffff, 0 0 80px #00ffff, 0 0 120px #00ffff;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
