@@ -34,7 +34,7 @@ const product2 = [
         "price": 16087,
         "description": "SAMSUNG Galaxy M35 5G (Thunder Grey, 128 GB)  (6 GB RAM)",
         "brand": "Samsung",
-        "image": "https://m.media-amazon.com/images/I/71Q3HLa8kfL._SX569_.jpg", // Amazon link
+        "image": "https://m.media-amazon.com/images/I/81nJiu51M+L._SX679_.jpg", // Amazon link
         "buy2": "https://www.flipkart.com/samsung-galaxy-m35-5g-thunder-grey-128-gb/p/itm94360d23ec184?pid=MOBH2Z9HJYYQBFGD&lid=LSTMOBH2Z9HJYYQBFGDCVV1BP&marketplace=FLIPKART&q=samsung%20m35&sattr[]=color&sattr[]=storage&sattr[]=ram&st=color&otracker=search" // Flipkart link
     },
     {
